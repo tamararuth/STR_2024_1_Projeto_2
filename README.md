@@ -1,50 +1,45 @@
 
-# Projeto 1 - Sistemas em Tempo Real
+# Projeto 2 - Sistemas em Tempo Real
 
 ---
 
 ## Descrição Geral
 
-    O projeto consiste em um programa na linguguagem C, executado em multithread.
-    Utilizando a Lógica de semaforos para controlara execução do programa
-
-SO:
-    Red Hat Enterprise Linux 8 (Red Hat 8.5.0-22)
-
-gcc version:
-    8.5.0 20210514
+    O projeto consiste em um programa na linguguagem Python para determinar se o escalonamento
+    de uma carga de trabalho específica é viável usando o algoritmo Rate Monotonic (RM). Caso seja,
+    sugerir um escalonamento possível para a carga de trabalho utilizando uma heurística baseada
+    na análise das tarefas fornecidas.
 
 Bibliotecas:
-    stdio.h
-    stdlib.h
-    pthread.h
-    semaphore.h
-    unistd.h
-    time.h
+    random
+    json
 
-### Barbeiros
+### Arquivo 1
 
-Função destinada para implementar lógica de "consumidor", ele tem como base de funcionamento
-"dormir" caso não haja nenhuma pessoa para ser atendida, acordar ao chegar algum cliente 
-e atende-lo com base em um tempo aleatório.
+Tem como objetivo gerar a lista de tarefas de forma aleatória do tipo JSON, onde cada tarefa deve
+possuir os seguintes atributos: 
+    
+    id: identificador único da tarefa (string).
+    period: período da tarefa em milissegundos (inteiro).
+    execution_time: tempo de execução da tarefa em milissegundos (inteiro).
 
-### Clientes
+### Main
 
-Os Clientes serão gerados em tempos aleatórios e ao chegarem ao salão ficaram esperando na cadeira
-de espera até que um dos barbeiros acorde para atendê-lo. Ao cliente chegar e não ter nenhuma cadeira vaga
-ele irá sairá do salão sem nada ser usado. Ele implementa a lógica de um "produtor".
+A partir do arquivo gerado anteriormente, tem como objetivo verificar a viabilidade do escalonamento
+através da fórmula de utilização total, sendo viável se a utilização total não ultrapassar o limite
+calculado, para determinar se o escalonamento RM pode ser utilizado de forma eficaz.
 
-### Main (Barbearia)
+### Arquivo 2
 
-A barbearia terá 5 cadeiras de espera, 3 barbeiros e 3 cadeiras para atendimento ao cliente.
-A função main tem o papel de criar todas essas estuturas, alem de criar os semaforos visíveis.
+Ao final, a saída do projeto será um arquivo em formato JSON contendo as seguintes informações:
+
+    Viabilidade do escalonamento: uma mensagem indicando se o escalonamento é viável ou não, com base
+    na análise da carga de trabalho fornecida.
+    Sugestão de escalonamento: uma sugestão de escalonamento para as tarefas, usando uma heurística
+    apropriada, listando as tarefas em ordem de prioridade.
 
 ## Desenvolvedores
 
     Tulio Tavares   (tulio.tavares@ee.ufcg.edu.br)
     Tamara Ruth     (tamara.santos@ee.ufcg.edu.br)
     Matheus Lucas   (matheuslucas.farias@ee.ufcg.edu.br)
-
-
-by Túlio Tavares
-
