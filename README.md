@@ -10,7 +10,7 @@
     sugerir um escalonamento possível para a carga de trabalho utilizando uma heurística baseada
     na análise das tarefas fornecidas.
 
-Bibliotecas:
+### Bibliotecas
     random
     json
 
