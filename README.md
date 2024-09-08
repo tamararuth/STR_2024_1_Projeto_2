@@ -42,6 +42,10 @@ Ao final, a saída do projeto será um arquivo em formato JSON contendo as segui
     - Sugestão de escalonamento: uma sugestão de escalonamento para as tarefas, usando uma heurística
     apropriada, listando as tarefas em ordem de prioridade.
 
+## Demonstração
+
+Link de acesso ao vídeo no YouTube: 
+
 ## Desenvolvedores
 
     Matheus Lucas   (matheuslucas.farias@ee.ufcg.edu.br)
