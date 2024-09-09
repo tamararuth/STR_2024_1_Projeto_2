@@ -16,7 +16,7 @@
 
 ### Arquivo 1
 
-Tem como objetivo gerar a lista de tarefas de forma aleatória do tipo JSON, onde cada tarefa deve
+Tem como objetivo gerar a lista de tarefas de forma aleatória em um arquivo .json, onde cada tarefa deve
 possuir os seguintes atributos: 
     
     - id: identificador único da tarefa (string).
@@ -26,8 +26,7 @@ possuir os seguintes atributos:
 ### Arquivo 2
 
 A partir do arquivo gerado anteriormente, tem como objetivo verificar a viabilidade do escalonamento
-através da fórmula de utilização total, sendo viável se a utilização total (U) não ultrapassar o limite
-calculado, para determinar se o escalonamento RM pode ser utilizado de forma eficaz.
+através da fórmula de utilização total (U).
 
 Assim, existem três resultados possíveis:
 
@@ -35,7 +34,7 @@ Assim, existem três resultados possíveis:
     - Desconhecido: se U for maior que o limite calculado e menor que 1.
     - Não viável: se U for maior que 1.
 
-Ao final, a saída do projeto será um arquivo em formato JSON contendo as seguintes informações:
+Ao final, a saída do projeto será um arquivo em formato .json contendo as seguintes informações:
 
     - Viabilidade do escalonamento: uma mensagem indicando se o escalonamento é viável ou não, com base
     na análise da carga de trabalho fornecida.
