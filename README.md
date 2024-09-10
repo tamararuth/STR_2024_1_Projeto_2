@@ -45,7 +45,7 @@ Ao final, a saída do projeto será um arquivo em formato .json contendo as segu
 
 ## Demonstração
 
-Link de acesso ao vídeo no YouTube: 
+Link de acesso ao vídeo no YouTube: https://youtu.be/XLX-k2XmsSQ
 
 ## Desenvolvedores
 
