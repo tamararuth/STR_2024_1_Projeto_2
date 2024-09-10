@@ -40,6 +40,8 @@ Ao final, a saída do projeto será um arquivo em formato .json contendo as segu
     na análise da carga de trabalho fornecida.
     - Sugestão de escalonamento: uma sugestão de escalonamento para as tarefas, usando uma heurística
     apropriada, listando as tarefas em ordem de prioridade.
+## Fluxograma do algoritmo
+![Imagem indisponível](Fluxograma.svg)
 
 ## Demonstração
 
