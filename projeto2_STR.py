@@ -13,7 +13,7 @@ with open('tasks_list.json', 'r') as file:
 #Numbers of tasks
 n = len(input_data['tasks'])
 
-#Usability
+#Utilization
 U = 0
 
 #Computing the usability and the viability
